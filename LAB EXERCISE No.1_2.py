@@ -27,29 +27,29 @@ countdown(5)
 print("." * 20)
 
 # a, e, i, o, u assigned to *, &, #, +, ! respectively
-t = ("*", "&", "#", "+", "!")
+tuple_char = ("*", "&", "#", "+", "!")
 decrypted_input = ""
 
 #Checking
 # If *, change to "a"
 for u in range (len(user_input)):
-    if user_input[u] == t[0]:
+    if user_input[u] == tuple_char[0]:
         decrypted_input += "a"
 
 # If &, change to "e"
-    elif user_input[u] == t[1]:
+    elif user_input[u] == tuple_char[1]:
         decrypted_input += "e"
 
 # If #, change to "i"
-    elif user_input[u] == t[2]:
+    elif user_input[u] == tuple_char[2]:
         decrypted_input += "i"
 
 # If +, change to "o"
-    elif user_input[u] == t[3]:
+    elif user_input[u] == tuple_char[3]:
         decrypted_input += "o"
 
 # If !, change to "u"
-    elif user_input[u] == t[4]:
+    elif user_input[u] == tuple_char[4]:
         decrypted_input += "u"
     else:
         decrypted_input += user_input[u]
